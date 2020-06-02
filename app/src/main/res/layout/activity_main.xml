@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
-                android:text="32"/>
+                android:text="7"/>
 
             <TextView
                 android:id="@+id/myNumTxt02"
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="34"/>
+                android:text="9"/>
 
             <TextView
                 android:id="@+id/myNumTxt03"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="16"/>
+                android:text="35"/>
 
             <TextView
                 android:id="@+id/myNumTxt04"
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="28"/>
+                android:text="34"/>
 
             <TextView
                 android:id="@+id/myNumTxt05"
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="9"/>
+                android:text="28"/>
 
             <TextView
                 android:id="@+id/myNumTxt06"
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="4"/>
+                android:text="43"/>
 
         </LinearLayout>
 
