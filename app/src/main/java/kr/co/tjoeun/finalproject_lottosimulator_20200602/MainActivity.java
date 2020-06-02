@@ -5,9 +5,11 @@ import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -40,12 +42,30 @@ public class MainActivity extends BaseActivity {
 
     List<TextView> myNumTxts = new ArrayList<>();
 
+    Handler mHandler = new Handler();
+    Runnable buyLottoRunnable = new Runnable() {
+        @Override
+        public void run() {
+
+            if(useMoney<10000000){
+                makeLottoWinNumbers();
+                checkWinRank();
+                mHandler.post(buyLottoRunnable);
+            }
+            else{
+                Toast.makeText(mContext,"로또구매를 종료합니다.",Toast.LENGTH_SHORT).show();
+            }
+
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
         setupEvents();
         setValues();
+
     }
 
     @Override
@@ -55,14 +75,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
 
-                while(true){
-                    makeLottoWinNumbers();
-                    checkWinRank();
-
-                    if(useMoney==1000000){
-                        break;
-                    }
-                }
+                mHandler.post(buyLottoRunnable);
 
             }
         });
