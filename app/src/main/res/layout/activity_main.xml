@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
-                android:text="7"/>
+                android:text="1"/>
 
             <TextView
                 android:id="@+id/myNumTxt02"
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="9"/>
+                android:text="21"/>
 
             <TextView
                 android:id="@+id/myNumTxt03"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="35"/>
+                android:text="23"/>
 
             <TextView
                 android:id="@+id/myNumTxt04"
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="34"/>
+                android:text="27"/>
 
             <TextView
                 android:id="@+id/myNumTxt05"
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="28"/>
+                android:text="42"/>
 
             <TextView
                 android:id="@+id/myNumTxt06"
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="43"/>
+                android:text="45"/>
 
         </LinearLayout>
 
@@ -155,6 +155,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="@string/buy_one_lotto"/>
+
+        <Button
+            android:id="@+id/buyAutoLottoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/buy_auto_lotto"/>
 
         <LinearLayout
             android:layout_width="match_parent"
