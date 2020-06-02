@@ -24,15 +24,21 @@ public class MainActivity extends BaseActivity {
 
     ActivityMainBinding binding;
 
+//    당첨번호 여러개를 저장할 배열
     int[] winLottoNumArr = new int[6];
+//    보너스 번호 저장변수
     int bonusNum = 0;
 
+//    화면에 뿌려주기 편하려고 만든 텍스트뷰 목록(당첨번호들에 대한)
     List<TextView> winNumTxts = new ArrayList<>();
 
+//    사용한 금액이 커질수 있니 long으로 생성
     long useMoney = 0L;
 
+//    당첨금액이 커질수 있으니 long으로 (overflow 현상 방지)
     long winMoney = 0L;
 
+//    1등~꽝 까지의 당첨 횟수를 기록하는 변수들
     int firstRankCount = 0;
     int secondRankCount = 0;
     int thirdRankCount = 0;
@@ -40,8 +46,10 @@ public class MainActivity extends BaseActivity {
     int fifthRankCount = 0;
     int unRankedCount = 0;
 
+//    내 숫자들을 받아 오기 위해 텍스트뷰들 목록으로 만듬
     List<TextView> myNumTxts = new ArrayList<>();
 
+//    지금 자동구매가 도는중인지 /아닌지 상황을 표시하는 변수
     Boolean isAutoBuyRunning = false;
 
 //    같은 핸들러를 여러곳에서 사용하니까 => 멤버변수로 생성 (공유해서 여러곳에서 사용하려고)
