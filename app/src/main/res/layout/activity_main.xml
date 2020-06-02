@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
-                android:text="1"/>
+                android:text="7"/>
 
             <TextView
                 android:id="@+id/myNumTxt02"
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="7"/>
+                android:text="17"/>
 
             <TextView
                 android:id="@+id/myNumTxt03"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="12"/>
+                android:text="25"/>
 
             <TextView
                 android:id="@+id/myNumTxt04"
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="16"/>
+                android:text="36"/>
 
             <TextView
                 android:id="@+id/myNumTxt05"
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:layout_marginLeft="10dp"
-                android:text="18"/>
+                android:text="39"/>
 
             <TextView
                 android:id="@+id/myNumTxt06"
@@ -169,6 +169,26 @@
 
             <TextView
                 android:id="@+id/useMoneyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0원"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/win_money"/>
+
+            <TextView
+                android:id="@+id/winMoneyTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
